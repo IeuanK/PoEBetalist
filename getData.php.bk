@@ -1,0 +1,27 @@
+<?php
+	$data = json_decode(file_get_contents('players.json'), true);
+	foreach($data as $name) {
+		print($name."\n");
+	}
+	while(true) {
+		$data = json_decode(file_get_contents('players.json'), true);
+		$nextPlayer = json_decode(file_get_contents('http://www.pathofexile.com/scripts/beta-invite-query.php?mode=next'), true);
+		$next = $nextPlayer["p1"]["upcoming"][0]["name"];
+
+		/*if(is_null($data))
+			$data = array();*/
+
+		if(!in_array($next, $data)) {
+			$data[] = $next;
+			print($next."\n");
+
+			if(!is_null($nextPlayer) && isset($next) && !is_null($next)) {
+				file_put_contents('players.json', json_encode($data, JSON_PRETTY_PRINT));
+				//var_dump($data);
+			}
+			/*ob_flush();
+	    	flush();*/
+		}
+		sleep(15);
+	}
+?>

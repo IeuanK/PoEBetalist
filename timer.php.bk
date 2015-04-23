@@ -1,0 +1,26 @@
+<div class="layoutBox1 layoutBoxFull noneTheme">
+    
+    <div class="layoutBoxContent">
+            <div id="betaInviteTimer" data-url="/theawakening" class="fullLink" style="display: block; cursor: pointer;">
+                <div id="beta-countdown" class="betaCountdown betaInviteTimerAwakening">
+                    <div class="loading" style="display: none;"></div>
+                    <div class="activeContainer" style="display: block;">
+                        <div class="countdown FontinBold is-countdown"><div class="minutes">1</div><div class="seconds">14</div></div>
+                        <div class="p1Status status awinvite">
+                            <div class="lastInvite FontinBold">
+                                <div class="name" style="display: block;">slipnslide</div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="nextInvite FontinBold">
+                                <div class="name" style="display: block;">Sabrion</div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            </div>
+    
+</div>

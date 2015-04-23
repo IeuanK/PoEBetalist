@@ -1,0 +1,9 @@
+<?php
+	/*$data = json_decode(file_get_contents('players.json'), true);
+	foreach($data as $name) {
+		echo '<a href="http://www.pathofexile.com/account/view-profile/'.$name.'" target="_blank" alt="'.$name.'\'s profile">'.$name.'</a><br />'; 
+	}*/
+?>
+<script type="text/javascript">
+	window.location.replace("http://icurse.nl/betalist/");
+</script>
